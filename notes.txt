@@ -1,0 +1,88 @@
+
+
+c - datatypes
+---------
+int
+float
+char
+double
+long
+short
+
+python  objects
+--------
+
+number
+-------
+number can be integer or float or hexa or octal.
+
+
+string
+
+
+list
+
+tuple
+
+dictionary
+
+set
+
+# C language
+
+if ( a < b)
+{
+
+
+}
+
+level1
+level1
+level1
+if cond:
+     level2
+     level2
+     level2
+level1
+level2
+
+
+conditions
+----------
+simple if
+if-else
+if-elif-elif-elif-elif-else
+
+
+control statements
+-----------------------
+for loop
+while loop
+
+
+operators
+------------
+
+
+arithmetic operators:  +  -  *   %   /
+
+relational operators :  <  <= >  >= == !=
+
+logical operators:  and    or   not     ( && ||  are NOt allowed in python)
+
+
+assignment operators:  ( ++ and -- are NOT allowed in python)
+
+val = 10
+val = val + 1     (or)   val+=1      
+
+special operators:
+--------------------
++ : concatenation operator
+* : repetition opeator
+in
+as
+
+
+file handling
+----------------
