@@ -86,3 +86,243 @@ as
 
 file handling
 ----------------
+
+csv
+jpeg
+xlsx
+mp4
+pkl
+parquet
+json
+zip
+xml
+html
+txt
+keras
+log
+docx/doc
+pptx
+xlsx
+edi
+pdf
+h5
+bat
+png
+dat 
+7z
+rar
+tar
+gz
+tar.gz
+sql
+jpeg
+mpeg
+mov
+
+
+
+
+working with flat files ( txt conf  csv  log dat json xml ..)
+----------------------------------------------
+read mode
+write mode
+append mode
+
+opening the file
+----------------------
+syntax:    object = open(filename , mode)
+example:    obj  = open("customers.txt","r")
+
+           obj  = open("customers.txt","w")
+           # case1: if file is not existing... file will be created first
+           # case2: if file is already existing... it overwrites the complete content and then writes
+
+           obj  = open("customers.txt","a")
+           # case1: if file is not existing... file will be created first
+           # case2: if file is already existing... it appends the output to the file
+
+closing the file
+------------------
+obj.close()
+           
+
+
+
+
+
+working with third party files ( xlsx  docx pdf  mp4 zip 7z ...)
+---------------------------------------------------
+In order to work with thrid party files ... we need a have a  third party library which is available in
+www.pypi.org
+
+
+read operation
+----------------
+reading the file line by line
+fobj.readlines()
+fobj.read()
+using csv library for csv files , json library for json files
+using pandas library
+
+
+write operation
+---------------
+fobj.write()
+fobj.writelines()
+using csv library for write operations
+using pandas 
+
+
+Exception handling
+-----------------------
+There are 2 types of errors.
+
+1. syntax error
+2. semantic error or runtime error or logical error
+
+Handling the errors that occurs during runtime is known as exception handling.
+
+try
+except
+else
+finally
+raise
+
+
+function | definition | block | subroutine | method
+-------------------------------------------------
+
+1. builtin function
+2. user defined function
+
+
+user defined function
+---------------------
+-code reusability  - define block once and call it for mltiple times
+
+
+passing arguments
+----------------
+fixed arguments
+default arguments
+keyword arguments
+variable length arguments
+
+
+library | package | module 
+-------------------------------------
+- Every library contains set of methods for some particular task.
+
+
+builtin libraries
+------------------
+These are already with python.
+with default python ... we get almost 3000+ libraries installed with python
+     anaconda python .. we get more than 10000+ libraries installed
+
+
+third party libraries
+-------------------------
+Depending on your requirement(cloud automation , ML , gen ai , testing ,selenium,web developement), developer has to install the library from  www.pypi.org
+
+- installing the library downloading it manually
+- using pip tool ( even the dependencies will be installed using pip tool )
+
+
+
+
+Linux       python
+-------------------
+ls -ltr      os.listdir()
+dir
+
+
+date        datetime.datetime.now()
+            time.time()
+
+
+
+pwd                os.getcwd()
+
+
+cpuutilization     psutil
+
+
+cp sour dest        shutil
+
+
+
+rm -rf               os.remove(file)
+                    os.unlink(file)
+
+
+
+
+python task =  core python skills      +  libraries  + domain expertise
+               ( procedural  or object)
+
+
+web scrapping
+--------------
+
+
+step1 : read the webpage(html)                   this step is done using requests
+step2 : extract the content from html             this step is using bs4
+
+
+steps
+-------
+
+
+display all existing databases
+------------------------------
+show databases ;
+
+create a new databases
+-----------------------
+create database empdb ;
+
+access your database
+-------------------
+use empdb;
+
+creating table
+-----------------
+create table employees ( workclass varchar(100) , education varchar(100), gender varchar(10)) ;
+
+inserting records
+---------------------
+insert into employees values('public','phd','Male');
+insert into employees values('private','engineer','Female');
+
+make the change permanent
+---------------------------
+commit;
+
+display all the records
+-------------------
+select * from employees;
+
+
+step1: connect to db
+step2: define query
+step3: execute query
+step4: fetch the output
+step5: close the connection
+
+
+
+
+creating virtual environments
+----------------------------------
+
+1. using venv library
+2. using virtualenv library ( third party library)
+3. conda tool ( installed with anaconda)
+
+step1: create virtual environments
+step2: activate the environments
+step3 : navigate between multiple virutal environments
+
+
+
